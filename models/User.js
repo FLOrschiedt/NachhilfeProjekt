@@ -22,7 +22,7 @@ const UserSchema = mongoose.Schema({
         requires: true
     },
     houseNumber: {
-        type: int,
+        type: String,
         requires: true
     }
 });

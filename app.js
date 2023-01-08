@@ -17,8 +17,13 @@ app.use('/posts', () => {
 
 //Import Routes
 const postsRoute = require('./routes/posts');
-
 app.use('/posts', postsRoute);
+
+const usersRoute = require('./routes/users');
+app.use('/users', usersRoute);
+
+const timeslotsRoute = require('./routes/timeslots');
+app.use('/timeslots', timeslotsRoute);
 
 //ROUTES
 app.get('/', (req,res) => {
