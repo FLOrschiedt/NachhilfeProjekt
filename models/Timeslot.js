@@ -15,11 +15,11 @@ const TimeslotSchema = mongoose.Schema({
         requires: true
     },
     teacher: {
-        type: User,
+        type: String,
         requires: true
     },
     student: {
-        type: User,
+        type: String,
         requires: true
     }
 });
